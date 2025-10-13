@@ -1,0 +1,38 @@
+{
+  "globals": {
+    "appName": "Biologics",
+    "hosting": {
+      "domainName": "biologics.com",
+      "certificateArn": "",
+      "sourceCode": "github",
+      "githubOwner": "pdas-neuroniks",
+      "sourceRepo": "aws-hlf-fargate",
+      "ecrName": "",
+      "dbHost": "",
+      "dbUser": "",
+      "dbPass": "",
+      "dbName": ""
+    }
+  },
+  "main": {
+    "stage": "Prod",
+    "env": {
+      "account": "910000000000",
+      "region": "us-east-1"
+    }
+  },
+  "staging": {
+    "stage": "Stag",
+    "env": {
+      "account": "910000000000",
+      "region": "us-east-1"
+    }
+  },
+  "develop": {
+    "stage": "Dev",
+    "env": {
+      "account": "910000000000",
+      "region": "us-east-1"
+    }
+  }
+}
