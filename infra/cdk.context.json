@@ -1,8 +1,8 @@
 {
   "globals": {
-    "appName": "Biologics",
+    "appName": "Blockcede",
     "hosting": {
-      "domainName": "biologics.com",
+      "domainName": "aileron-ai.com",
       "certificateArn": "",
       "sourceCode": "github",
       "githubOwner": "pdas-neuroniks",
@@ -17,21 +17,21 @@
   "main": {
     "stage": "Prod",
     "env": {
-      "account": "910000000000",
+      "account": "108625623765",
       "region": "us-east-1"
     }
   },
   "staging": {
     "stage": "Stag",
     "env": {
-      "account": "910000000000",
+      "account": "108625623765",
       "region": "us-east-1"
     }
   },
   "develop": {
     "stage": "Dev",
     "env": {
-      "account": "910000000000",
+      "account": "108625623765",
       "region": "us-east-1"
     }
   }
