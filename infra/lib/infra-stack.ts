@@ -16,14 +16,14 @@ export class InfraStack extends cdk.Stack {
         super(scope, id, props);
         const appName = `${context.appName}-${context.stage}`;
 
-        const ledgerStack = new LedgerStack(
+        /* const ledgerStack = new LedgerStack(
             this,
             `${appName}-LedgerStack`,
             {
                 name: appName,
             },
             context
-        )
+        ) */
 
     }
 }

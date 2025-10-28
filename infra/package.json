@@ -8,7 +8,12 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "bootstrap": "cdk bootstrap --profile neuroniks-dev",
+    "synth": "cdk synth",
+    "deploy": "cdk synth && cdk deploy --require-approval never --all --profile neuroniks-dev --outputs-file ../cdk-outputs.json",
+    "destroy": "cdk destroy --require-approval never --all --profile neuroniks-dev",
+    "push": "git add . && git commit -m 'backend push' && git push"
   },
   "devDependencies": {
     "@types/git-branch": "^2.0.5",

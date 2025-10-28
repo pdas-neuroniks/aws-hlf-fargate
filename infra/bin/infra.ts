@@ -18,10 +18,10 @@ const context: CDKContext & cdk.StackProps = {
     ...branchConfig
 }
 
-new InfraStack(app, 'InfraStack', {
+const appName = `${context.appName}-${context.stage}`
+const stackName = `${appName}-Stack`
+
+new InfraStack(app, stackName, {
     enableLocalhost: true,
-    env: {
-        account: process.env.CDK_DEFAULT_ACCOUNT,
-        region: process.env.CDK_DEFAULT_REGION
-    }
+    env: context.env
 }, context);
