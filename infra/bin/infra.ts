@@ -20,8 +20,5 @@ const context: CDKContext & cdk.StackProps = {
 
 new InfraStack(app, 'InfraStack', {
     enableLocalhost: true,
-    env: {
-        account: process.env.CDK_DEFAULT_ACCOUNT,
-        region: process.env.CDK_DEFAULT_REGION
-    }
+    env: context.env
 }, context);
