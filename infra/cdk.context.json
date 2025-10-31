@@ -1,1 +1,42 @@
-
+{
+  "globals": {
+    "appName": "Blockcede",
+    "hosting": {
+      "domainName": "aileron-ai.com",
+      "certificateArn": "ab52a4a1-7f88-4b63-94f5-dba136ecd2b9",
+      "ghTokenName": "github-token",
+      "ghOwner": "pdas-neuroniks",
+      "repo": "aws-hlf-fargate"
+    },
+    "ec2KeyPairName": "pdas-dev"
+  },
+  "main": {
+    "stage": "Prod",
+    "env": {
+      "account": "108625623765",
+      "region": "us-east-1"
+    }
+  },
+  "staging": {
+    "stage": "Stag",
+    "env": {
+      "account": "108625623765",
+      "region": "us-east-1"
+    }
+  },
+  "develop": {
+    "stage": "Dev",
+    "env": {
+      "account": "108625623765",
+      "region": "us-east-1"
+    }
+  },
+  "availability-zones:account=108625623765:region=us-east-1": [
+    "us-east-1a",
+    "us-east-1b",
+    "us-east-1c",
+    "us-east-1d",
+    "us-east-1e",
+    "us-east-1f"
+  ]
+}

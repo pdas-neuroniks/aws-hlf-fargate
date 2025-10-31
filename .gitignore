@@ -1,3 +1,5 @@
 *.bak
 *.env
+*.pem
 cdk-outputs.json
+refresh.sh
