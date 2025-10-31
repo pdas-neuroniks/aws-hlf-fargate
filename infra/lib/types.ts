@@ -2,6 +2,7 @@ export type CDKContext = {
     appName: string
     stage: string
     branch: string
+    ec2KeyPairName?: string
     env: {
         account: string
         region: string
